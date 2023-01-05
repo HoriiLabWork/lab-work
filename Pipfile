@@ -22,5 +22,5 @@ tensorboardx = "*"
 python_version = "3.10"
 python_full_version = "3.10.9"
 
-[[scripts]]
+[scripts]
 smi = "watch -n 1 nvidia-smi"
