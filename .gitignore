@@ -1,6 +1,8 @@
 logs
 test-cifar-10
 vit-base-beans
+dataset5
+asl
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
