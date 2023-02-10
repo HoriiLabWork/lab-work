@@ -1,4 +1,8 @@
 ucf101
+dataset5
+asl
+asl-vit
+*.tar.bz2
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
