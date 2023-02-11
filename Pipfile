@@ -19,6 +19,7 @@ torchaudio = "*"
 boto3 = "*"
 matplotlib = "*"
 pytorchvideo = "*"
+umap-learn = "*"
 
 [dev-packages]
 ipykernel = "*"
