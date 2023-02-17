@@ -20,6 +20,8 @@ boto3 = "*"
 matplotlib = "*"
 pytorchvideo = "*"
 umap-learn = "*"
+pandas = "*"
+pillow = "*"
 
 [dev-packages]
 ipykernel = "*"
