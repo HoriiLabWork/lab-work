@@ -2,7 +2,11 @@ ucf101
 dataset5
 asl
 asl-vit
+fer-majority-vit
+fer-majority-weightedloss-vit
+fer-plus
 *.tar.bz2
+*.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
