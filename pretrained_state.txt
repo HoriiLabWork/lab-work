@@ -1,0 +1,272 @@
+<bound method Module.state_dict of PerceiverForMultimodalAutoencoding(
+  (perceiver): PerceiverModel(
+    (input_preprocessor): PerceiverMultimodalPreprocessor(
+      (padding): ParameterDict(
+          (audio): Parameter containing: [torch.FloatTensor of size 1x4]
+          (image): Parameter containing: [torch.FloatTensor of size 1x162]
+          (label): Parameter containing: [torch.FloatTensor of size 1x356]
+      )
+      (mask): ParameterDict(
+          (audio): Parameter containing: [torch.FloatTensor of size 1x405]
+          (image): Parameter containing: [torch.FloatTensor of size 1x405]
+          (label): Parameter containing: [torch.FloatTensor of size 1x405]
+      )
+    )
+    (output_postprocessor): PerceiverMultimodalPostprocessor(
+      (modalities): ModuleDict(
+        (audio): PerceiverAudioPostprocessor(
+          (classifier): Linear(in_features=512, out_features=16, bias=True)
+        )
+        (image): PerceiverProjectionPostprocessor(
+          (classifier): Linear(in_features=512, out_features=3, bias=True)
+        )
+        (label): PerceiverClassificationPostprocessor(
+          (classifier): Linear(in_features=512, out_features=49, bias=True)
+        )
+      )
+    )
+    (embeddings): PerceiverEmbeddings()
+    (encoder): PerceiverEncoder(
+      (cross_attention): PerceiverLayer(
+        (attention): PerceiverAttention(
+          (self): PerceiverSelfAttention(
+            (layernorm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+            (layernorm2): LayerNorm((405,), eps=1e-05, elementwise_affine=True)
+            (query): Linear(in_features=512, out_features=405, bias=True)
+            (key): Linear(in_features=405, out_features=405, bias=True)
+            (value): Linear(in_features=405, out_features=405, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (output): PerceiverSelfOutput(
+            (dense): Linear(in_features=405, out_features=512, bias=True)
+          )
+        )
+        (layernorm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (mlp): PerceiverMLP(
+          (dense1): Linear(in_features=512, out_features=512, bias=True)
+          (intermediate_act_fn): GELUActivation()
+          (dense2): Linear(in_features=512, out_features=512, bias=True)
+        )
+      )
+      (self_attends): ModuleList(
+        (0): PerceiverLayer(
+          (attention): PerceiverAttention(
+            (self): PerceiverSelfAttention(
+              (layernorm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+              (layernorm2): Identity()
+              (query): Linear(in_features=512, out_features=512, bias=True)
+              (key): Linear(in_features=512, out_features=512, bias=True)
+              (value): Linear(in_features=512, out_features=512, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): PerceiverSelfOutput(
+              (dense): Linear(in_features=512, out_features=512, bias=True)
+            )
+          )
+          (layernorm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (mlp): PerceiverMLP(
+            (dense1): Linear(in_features=512, out_features=512, bias=True)
+            (intermediate_act_fn): GELUActivation()
+            (dense2): Linear(in_features=512, out_features=512, bias=True)
+          )
+        )
+        (1): PerceiverLayer(
+          (attention): PerceiverAttention(
+            (self): PerceiverSelfAttention(
+              (layernorm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+              (layernorm2): Identity()
+              (query): Linear(in_features=512, out_features=512, bias=True)
+              (key): Linear(in_features=512, out_features=512, bias=True)
+              (value): Linear(in_features=512, out_features=512, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): PerceiverSelfOutput(
+              (dense): Linear(in_features=512, out_features=512, bias=True)
+            )
+          )
+          (layernorm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (mlp): PerceiverMLP(
+            (dense1): Linear(in_features=512, out_features=512, bias=True)
+            (intermediate_act_fn): GELUActivation()
+            (dense2): Linear(in_features=512, out_features=512, bias=True)
+          )
+        )
+        (2): PerceiverLayer(
+          (attention): PerceiverAttention(
+            (self): PerceiverSelfAttention(
+              (layernorm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+              (layernorm2): Identity()
+              (query): Linear(in_features=512, out_features=512, bias=True)
+              (key): Linear(in_features=512, out_features=512, bias=True)
+              (value): Linear(in_features=512, out_features=512, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): PerceiverSelfOutput(
+              (dense): Linear(in_features=512, out_features=512, bias=True)
+            )
+          )
+          (layernorm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (mlp): PerceiverMLP(
+            (dense1): Linear(in_features=512, out_features=512, bias=True)
+            (intermediate_act_fn): GELUActivation()
+            (dense2): Linear(in_features=512, out_features=512, bias=True)
+          )
+        )
+        (3): PerceiverLayer(
+          (attention): PerceiverAttention(
+            (self): PerceiverSelfAttention(
+              (layernorm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+              (layernorm2): Identity()
+              (query): Linear(in_features=512, out_features=512, bias=True)
+              (key): Linear(in_features=512, out_features=512, bias=True)
+              (value): Linear(in_features=512, out_features=512, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): PerceiverSelfOutput(
+              (dense): Linear(in_features=512, out_features=512, bias=True)
+            )
+          )
+          (layernorm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (mlp): PerceiverMLP(
+            (dense1): Linear(in_features=512, out_features=512, bias=True)
+            (intermediate_act_fn): GELUActivation()
+            (dense2): Linear(in_features=512, out_features=512, bias=True)
+          )
+        )
+        (4): PerceiverLayer(
+          (attention): PerceiverAttention(
+            (self): PerceiverSelfAttention(
+              (layernorm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+              (layernorm2): Identity()
+              (query): Linear(in_features=512, out_features=512, bias=True)
+              (key): Linear(in_features=512, out_features=512, bias=True)
+              (value): Linear(in_features=512, out_features=512, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): PerceiverSelfOutput(
+              (dense): Linear(in_features=512, out_features=512, bias=True)
+            )
+          )
+          (layernorm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (mlp): PerceiverMLP(
+            (dense1): Linear(in_features=512, out_features=512, bias=True)
+            (intermediate_act_fn): GELUActivation()
+            (dense2): Linear(in_features=512, out_features=512, bias=True)
+          )
+        )
+        (5): PerceiverLayer(
+          (attention): PerceiverAttention(
+            (self): PerceiverSelfAttention(
+              (layernorm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+              (layernorm2): Identity()
+              (query): Linear(in_features=512, out_features=512, bias=True)
+              (key): Linear(in_features=512, out_features=512, bias=True)
+              (value): Linear(in_features=512, out_features=512, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): PerceiverSelfOutput(
+              (dense): Linear(in_features=512, out_features=512, bias=True)
+            )
+          )
+          (layernorm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (mlp): PerceiverMLP(
+            (dense1): Linear(in_features=512, out_features=512, bias=True)
+            (intermediate_act_fn): GELUActivation()
+            (dense2): Linear(in_features=512, out_features=512, bias=True)
+          )
+        )
+        (6): PerceiverLayer(
+          (attention): PerceiverAttention(
+            (self): PerceiverSelfAttention(
+              (layernorm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+              (layernorm2): Identity()
+              (query): Linear(in_features=512, out_features=512, bias=True)
+              (key): Linear(in_features=512, out_features=512, bias=True)
+              (value): Linear(in_features=512, out_features=512, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): PerceiverSelfOutput(
+              (dense): Linear(in_features=512, out_features=512, bias=True)
+            )
+          )
+          (layernorm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (mlp): PerceiverMLP(
+            (dense1): Linear(in_features=512, out_features=512, bias=True)
+            (intermediate_act_fn): GELUActivation()
+            (dense2): Linear(in_features=512, out_features=512, bias=True)
+          )
+        )
+        (7): PerceiverLayer(
+          (attention): PerceiverAttention(
+            (self): PerceiverSelfAttention(
+              (layernorm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+              (layernorm2): Identity()
+              (query): Linear(in_features=512, out_features=512, bias=True)
+              (key): Linear(in_features=512, out_features=512, bias=True)
+              (value): Linear(in_features=512, out_features=512, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): PerceiverSelfOutput(
+              (dense): Linear(in_features=512, out_features=512, bias=True)
+            )
+          )
+          (layernorm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+          (mlp): PerceiverMLP(
+            (dense1): Linear(in_features=512, out_features=512, bias=True)
+            (intermediate_act_fn): GELUActivation()
+            (dense2): Linear(in_features=512, out_features=512, bias=True)
+          )
+        )
+      )
+    )
+    (decoder): PerceiverMultimodalDecoder(
+      (modalities): ModuleDict(
+        (audio): PerceiverBasicDecoder(
+          (output_position_encodings): PerceiverFourierPositionEncoding()
+          (positions_projection): Identity()
+        )
+        (image): PerceiverBasicVideoAutoencodingDecoder(
+          (decoder): PerceiverBasicDecoder(
+            (output_position_encodings): PerceiverFourierPositionEncoding()
+            (positions_projection): Identity()
+          )
+        )
+        (label): PerceiverClassificationDecoder(
+          (decoder): PerceiverBasicDecoder(
+            (output_position_encodings): PerceiverTrainablePositionEncoding()
+            (positions_projection): Identity()
+          )
+        )
+      )
+      (decoder): PerceiverBasicDecoder(
+        (decoding_cross_attention): PerceiverLayer(
+          (attention): PerceiverAttention(
+            (self): PerceiverSelfAttention(
+              (layernorm1): LayerNorm((1026,), eps=1e-05, elementwise_affine=True)
+              (layernorm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+              (query): Linear(in_features=1026, out_features=512, bias=True)
+              (key): Linear(in_features=512, out_features=512, bias=True)
+              (value): Linear(in_features=512, out_features=512, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): PerceiverSelfOutput(
+              (dense): Linear(in_features=512, out_features=1026, bias=True)
+            )
+          )
+          (layernorm): LayerNorm((1026,), eps=1e-05, elementwise_affine=True)
+          (mlp): PerceiverMLP(
+            (dense1): Linear(in_features=1026, out_features=1026, bias=True)
+            (intermediate_act_fn): GELUActivation()
+            (dense2): Linear(in_features=1026, out_features=1026, bias=True)
+          )
+        )
+        (final_layer): Linear(in_features=1026, out_features=512, bias=True)
+      )
+      (padding): ParameterDict(
+          (audio): Parameter containing: [torch.FloatTensor of size 1x641]
+          (image): Parameter containing: [torch.FloatTensor of size 1x831]
+          (label): Parameter containing: [torch.FloatTensor of size 1x2]
+      )
+    )
+  )
+)>

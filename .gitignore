@@ -5,6 +5,7 @@ asl-vit
 fer-majority-vit
 fer-majority-weightedloss-vit
 fer-plus
+perceiver-ucf
 FERPlus
 *.tar.bz2
 *.zip
