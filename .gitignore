@@ -6,7 +6,9 @@ fer-majority-vit
 fer-majority-weightedloss-vit
 fer-plus
 perceiver-ucf
+affectnet-normalmse-vit
 FERPlus
+Affectnet
 *.tar.bz2
 *.zip
 
