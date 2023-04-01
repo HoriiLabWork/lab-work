@@ -22,6 +22,7 @@ pytorchvideo = "*"
 umap-learn = "*"
 pandas = "*"
 pillow = "*"
+wandb = "*"
 
 [dev-packages]
 ipykernel = "*"
@@ -31,4 +32,4 @@ python_version = "3.10"
 python_full_version = "3.10.10"
 
 [scripts]
-smi = "watch -n 1 nvidia-smi"
+smi = "watch -n 2 nvidia-smi"
