@@ -7,10 +7,14 @@ fer-majority-weightedloss-vit
 fer-plus
 perceiver-ucf
 affectnet-normalmse-vit
+affectnet-balancedMSE-vit
 FERPlus
 Affectnet
+emotion-stim
 *.tar.bz2
 *.zip
+wandb
+affectnet-balancedMSE-aro
 *.win
 
 # Byte-compiled / optimized / DLL files
