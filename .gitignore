@@ -11,6 +11,7 @@ FERPlus
 Affectnet
 *.tar.bz2
 *.zip
+*.win
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
