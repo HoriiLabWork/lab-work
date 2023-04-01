@@ -3,28 +3,44 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+url = "https://download.pytorch.org/whl/cu117"
+verify_ssl = true
+name = "downloadpytorch"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu117"
+verify_ssl = true
+name = "downloadpytorch"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu117"
+verify_ssl = true
+name = "downloadpytorch"
+
 [packages]
 transformers = "*"
 datasets = "*"
 ffmpeg-python = "*"
-torch = "*"
-torchvision = "*"
 opencv-python = "*"
 imageio = "*"
 numpy = "*"
 scipy = "*"
 ipython = "*"
 scikit-learn = "*"
-torchaudio = "*"
 boto3 = "*"
 matplotlib = "*"
 pytorchvideo = "*"
 umap-learn = "*"
 pandas = "*"
 pillow = "*"
+torch = {version = "*", index = "downloadpytorch"}
+torchvision = {version = "*", index = "downloadpytorch"}
+torchaudio = {version = "*", index = "downloadpytorch"}
 
 [dev-packages]
 ipykernel = "*"
+autopep8 = "*"
 
 [requires]
 python_version = "3.10"
