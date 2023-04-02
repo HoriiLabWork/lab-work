@@ -15,6 +15,7 @@ emotion-stim
 *.zip
 wandb
 affectnet-balancedMSE-aro
+affectnet-balancedMSE-aro-no910
 *.win
 
 # Byte-compiled / optimized / DLL files
