@@ -22,6 +22,7 @@ affectnet-balancedMSE-val
 affectnet-kde-val
 affectnet-kde-aroval
 affectnet-kde-aro
+affectnet-contrastive
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
