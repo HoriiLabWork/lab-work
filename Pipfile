@@ -35,9 +35,12 @@ umap-learn = "*"
 pandas = "*"
 pillow = "*"
 wandb = "*"
-torch = {version = "*", index = "downloadpytorch"}
-torchvision = {version = "*", index = "downloadpytorch"}
-torchaudio = {version = "*", index = "downloadpytorch"}
+torch = "*"
+torchvision = "*"
+torchaudio = "*"
+ipykernel = "*"
+autopep8 = "*"
+optuna = "*"
 
 [dev-packages]
 ipykernel = "*"
