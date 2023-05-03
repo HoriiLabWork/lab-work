@@ -1,9 +1,6 @@
 [submodule "SupContrast"]
 	path = SupContrast
 	url = https://github.com/HobbitLong/SupContrast.git
-[submodule "KDE-weighted-MSE"]
-	path = KDE-weighted-MSE
-	url = https://github.com/nRknpy/KDE-weighted-MSE.git
 [submodule "affectnet_regression/KDEweightedMSE"]
 	path = affectnet_regression/KDEweightedMSE
 	url = https://github.com/nRknpy/KDEweightedMSE.git
