@@ -1,3 +1,9 @@
+checkpoint-*
+config.json
+preprocessor_config.json
+*.bin
+trainer_state.json
+
 ucf101
 dataset5
 asl
@@ -8,7 +14,6 @@ fer-plus
 perceiver-ucf
 affectnet-normalmse-vit
 affectnet-balancedMSE-vit
-FERPlus
 Affectnet
 emotion-stim
 *.tar.bz2
