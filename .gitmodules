@@ -7,3 +7,6 @@
 [submodule "FERPlus"]
 	path = FERPlus
 	url = https://github.com/microsoft/FERPlus.git
+[submodule "affectnet_contrastive/SupContrast"]
+	path = affectnet_contrastive/SupContrast
+	url = https://github.com/HobbitLong/SupContrast.git
