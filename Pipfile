@@ -41,6 +41,8 @@ torchaudio = "*"
 ipykernel = "*"
 autopep8 = "*"
 optuna = "*"
+accelerate = "*"
+torchaffectnet = {git = "https://github.com/nRknpy/AffectNet_torch.git"}
 
 [dev-packages]
 ipykernel = "*"
